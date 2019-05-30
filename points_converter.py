@@ -34,7 +34,7 @@ x = 0   #counter for going through results
 lowest_finish = 0
 
 #open csv file with season results
-file_name = (season + ".csv")
+file_name = ("results\\" + season + ".csv")
 file = open(file_name, "r")
 for line in file:
     results.append([line.split(',')[0], {}, 0])     #add driver to list of results. Each results element has the driver name, hash table of finishes and points total to be calculated later.
